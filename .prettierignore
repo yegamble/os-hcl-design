@@ -1,0 +1,10 @@
+node_modules/
+storybook-static/
+dist/
+build/
+styles/tokens.css
+llms-full.txt
+.visual-baselines/
+pnpm-lock.yaml
+*.min.js
+*.min.css

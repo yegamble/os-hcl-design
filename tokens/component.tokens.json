@@ -1,0 +1,63 @@
+{
+  "button": {
+    "primary": {
+      "bg": {
+        "default": { "$value": "{color.action.primary}", "$type": "color" },
+        "hover": { "$value": "{color.action.primary-hover}", "$type": "color" },
+        "active": { "$value": "{color.action.primary-active}", "$type": "color" },
+        "disabled": { "$value": "{color.border.subtle}", "$type": "color" }
+      },
+      "fg": {
+        "default": { "$value": "{color.action.primary-fg}", "$type": "color" },
+        "disabled": { "$value": "{color.text.quaternary}", "$type": "color" }
+      }
+    },
+    "secondary": {
+      "bg": {
+        "default": { "$value": "{color.surface.elevated}", "$type": "color" },
+        "hover": { "$value": "{color.border.subtle}", "$type": "color" },
+        "active": { "$value": "{color.border.default}", "$type": "color" },
+        "disabled": { "$value": "{color.surface.elevated}", "$type": "color" }
+      },
+      "fg": {
+        "default": { "$value": "{color.text.primary}", "$type": "color" },
+        "disabled": { "$value": "{color.text.tertiary}", "$type": "color" }
+      },
+      "border": {
+        "default": { "$value": "{color.border.default}", "$type": "color" }
+      }
+    },
+    "ghost": {
+      "bg": {
+        "default": { "$value": "transparent", "$type": "color" },
+        "hover": { "$value": "{color.surface.elevated}", "$type": "color" },
+        "active": { "$value": "{color.border.subtle}", "$type": "color" },
+        "disabled": { "$value": "transparent", "$type": "color" }
+      },
+      "fg": {
+        "default": { "$value": "{color.text.primary}", "$type": "color" },
+        "disabled": { "$value": "{color.text.tertiary}", "$type": "color" }
+      }
+    },
+    "destructive": {
+      "bg": {
+        "default": { "$value": "{color.action.destructive}", "$type": "color" },
+        "hover": { "$value": "{color.action.destructive-hover}", "$type": "color" },
+        "active": { "$value": "{color.action.destructive-hover}", "$type": "color" },
+        "disabled": { "$value": "{color.border.subtle}", "$type": "color" }
+      },
+      "fg": {
+        "default": { "$value": "{color.action.destructive-fg}", "$type": "color" },
+        "disabled": { "$value": "{color.text.quaternary}", "$type": "color" }
+      }
+    }
+  },
+
+  "card": {
+    "bg": { "$value": "{color.surface.raised}", "$type": "color" },
+    "border": { "$value": "{color.border.subtle}", "$type": "color" },
+    "shadow": { "$value": "{shadow.card}", "$type": "shadow" },
+    "radius": { "$value": "{radius.card}", "$type": "dimension" },
+    "padding": { "$value": "{space.gutter.card}", "$type": "dimension" }
+  }
+}

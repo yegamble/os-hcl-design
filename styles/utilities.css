@@ -1,9 +1,6 @@
 /*
  * Apple-signature composed utilities.
  * Reference ONLY semantic tokens (never primitives).
- *
- * Glass/material utilities are authored in Task 4, alongside the material tokens
- * they consume. Absence of @utility glass-* here is intentional.
  */
 
 @utility bento-grid {
@@ -16,7 +13,6 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  /* Visual treatment applied by glass-regular utility (Task 4) when composed. */
 }
 
 @utility display-type {
@@ -27,6 +23,55 @@
 }
 
 @utility section-rhythm {
-  /* Apple-style generous vertical rhythm — at least 80px on mobile, 160px desktop. */
   padding-block: clamp(5rem, 10vw, 10rem);
+}
+
+/*
+ * Glass / material utilities.
+ * MUST honor prefers-reduced-transparency: Apple themselves walked back opacity
+ * post-beta for legibility; our fallback swaps to a solid token both via media
+ * query AND via the [data-reduced-transparency="reduce"] attribute (Storybook
+ * toolbar uses the attribute path so we can preview both states).
+ */
+
+@utility glass-thin {
+  background-color: color-mix(in oklab, var(--color-surface-opaque) 70%, transparent);
+  backdrop-filter: var(--material-thin-backdropFilter);
+  -webkit-backdrop-filter: var(--material-thin-backdropFilter);
+}
+
+@utility glass-regular {
+  background-color: color-mix(in oklab, var(--color-surface-opaque) 65%, transparent);
+  backdrop-filter: var(--material-regular-backdropFilter);
+  -webkit-backdrop-filter: var(--material-regular-backdropFilter);
+}
+
+@utility glass-thick {
+  background-color: color-mix(in oklab, var(--color-surface-opaque) 80%, transparent);
+  backdrop-filter: var(--material-thick-backdropFilter);
+  -webkit-backdrop-filter: var(--material-thick-backdropFilter);
+}
+
+@utility glass-fallback {
+  background-color: var(--material-regular-fallbackColor);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass-thin,
+  .glass-regular,
+  .glass-thick {
+    background-color: var(--material-regular-fallbackColor);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+[data-reduced-transparency='reduce'] .glass-thin,
+[data-reduced-transparency='reduce'] .glass-regular,
+[data-reduced-transparency='reduce'] .glass-thick {
+  background-color: var(--material-regular-fallbackColor);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }

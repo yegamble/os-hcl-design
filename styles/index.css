@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+@import './reset.css';
+@import './tokens.css';
+@import './utilities.css';
+
+@source "../components/**/*.tsx";
+@source "../patterns/**/*.tsx";
+@source "../.storybook/**/*.ts";
+@source "../.storybook/**/*.tsx";

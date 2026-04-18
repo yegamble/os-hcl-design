@@ -1,0 +1,39 @@
+/* Minimal reset.  Opinionated for an Apple-inspired aesthetic. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+body {
+  margin: 0;
+}
+
+/* Respect user motion preferences — required for every animated utility. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus-visible default — components override with an accent ring. */
+:focus-visible {
+  outline: 2px solid var(--color-action-primary, currentcolor);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}

@@ -10,6 +10,8 @@ module.exports = {
   rules: {
     'no-descending-specificity': null,
     'custom-property-empty-line-before': null,
+    'import-notation': null,
+    'comment-empty-line-before': null,
     'at-rule-no-unknown': [
       true,
       {

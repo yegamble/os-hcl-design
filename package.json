@@ -19,12 +19,25 @@
     "lint": "eslint . --ext .ts,.tsx,.cjs,.mjs && stylelint \"**/*.css\" --allow-empty-input",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "ci": "pnpm run typecheck && pnpm run lint && pnpm run format:check"
+    "build-tokens": "node build-tokens.mjs",
+    "build": "pnpm run build-tokens",
+    "ci": "pnpm run typecheck && pnpm run lint && pnpm run format:check && pnpm run build-tokens"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.5.2",
+    "tailwind-variants": "^0.3.0"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
     "@types/node": "^20.14.10",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "@typescript-eslint/parser": "^7.16.0",
+    "@vitejs/plugin-react": "^4.3.1",
     "eslint": "^8.57.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-jsx-a11y": "^6.9.0",
@@ -34,8 +47,11 @@
     "markdownlint-cli2": "^0.13.0",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
+    "style-dictionary": "^4.0.0",
     "stylelint": "^16.6.1",
     "stylelint-config-standard": "^36.0.1",
-    "typescript": "^5.5.4"
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
   }
 }

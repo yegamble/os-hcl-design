@@ -295,7 +295,7 @@ Type: Feature
 
 ## Progress Tracking
 
-- [ ] Task 1: Repo skeleton + base toolchain + public GitHub repo
+- [x] Task 1: Repo skeleton + base toolchain + public GitHub repo
 - [ ] Task 2: Tailwind v4 + Vite + Style Dictionary pipeline (no glass utilities yet)
 - [ ] Task 3: DTCG primitive tokens
 - [ ] Task 4: DTCG semantic + component tokens + glass utilities
@@ -308,7 +308,7 @@ Type: Feature
 - [ ] Task 11: hero-feature-grid pattern
 - [ ] Task 12: Playwright visual regression + baselines capture + final CI end-to-end verification
 
-**Total Tasks:** 12 | **Completed:** 0 | **Remaining:** 12
+**Total Tasks:** 12 | **Completed:** 1 | **Remaining:** 11
 
 ## Implementation Tasks
 

@@ -1,0 +1,32 @@
+/*
+ * Apple-signature composed utilities.
+ * Reference ONLY semantic tokens (never primitives).
+ *
+ * Glass/material utilities are authored in Task 4, alongside the material tokens
+ * they consume. Absence of @utility glass-* here is intentional.
+ */
+
+@utility bento-grid {
+  display: grid;
+  gap: var(--space-gutter-card);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}
+
+@utility sticky-nav-blur {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  /* Visual treatment applied by glass-regular utility (Task 4) when composed. */
+}
+
+@utility display-type {
+  font-family: var(--type-family-sans);
+  font-weight: var(--type-weight-heading);
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+@utility section-rhythm {
+  /* Apple-style generous vertical rhythm — at least 80px on mobile, 160px desktop. */
+  padding-block: clamp(5rem, 10vw, 10rem);
+}

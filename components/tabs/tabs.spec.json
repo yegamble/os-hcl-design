@@ -1,0 +1,23 @@
+{
+  "name": "Tabs",
+  "category": "navigation",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-tabs",
+  "subcomponents": ["TabsList", "TabsTrigger", "TabsContent"],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.surface.raised",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.border.subtle",
+    "color.action.primary",
+    "radius.pill"
+  ],
+  "a11y": {
+    "role": "tablist / tab / tabpanel",
+    "keyboard": ["Arrow", "Home", "End", "Tab"],
+    "focus": "focus-visible ring on trigger",
+    "minHitTarget": "44px"
+  }
+}

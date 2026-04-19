@@ -1,0 +1,10 @@
+{
+  "radio": {
+    "bg": { "$value": "{color.surface.default}", "$type": "color" },
+    "border": {
+      "default": { "$value": "{color.border.default}", "$type": "color" },
+      "selected": { "$value": "{color.action.primary}", "$type": "color" }
+    },
+    "indicator": { "$value": "{color.action.primary}", "$type": "color" }
+  }
+}

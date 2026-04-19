@@ -1,0 +1,18 @@
+{
+  "tabs": {
+    "list": {
+      "bg": { "$value": "{color.surface.elevated}", "$type": "color" },
+      "border": { "$value": "{color.border.subtle}", "$type": "color" },
+      "radius": { "$value": "{radius.pill}", "$type": "dimension" }
+    },
+    "trigger": {
+      "fg": {
+        "inactive": { "$value": "{color.text.secondary}", "$type": "color" },
+        "active": { "$value": "{color.text.primary}", "$type": "color" }
+      },
+      "bg": {
+        "active": { "$value": "{color.surface.raised}", "$type": "color" }
+      }
+    }
+  }
+}

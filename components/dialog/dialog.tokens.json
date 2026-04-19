@@ -1,0 +1,9 @@
+{
+  "dialog": {
+    "bg": { "$value": "{color.surface.raised}", "$type": "color" },
+    "border": { "$value": "{color.border.subtle}", "$type": "color" },
+    "fg": { "$value": "{color.text.primary}", "$type": "color" },
+    "radius": { "$value": "{radius.sheet}", "$type": "dimension" },
+    "shadow": { "$value": "{shadow.dialog}", "$type": "shadow" }
+  }
+}

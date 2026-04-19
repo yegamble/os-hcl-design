@@ -1,0 +1,39 @@
+{
+  "name": "Select",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-select",
+  "subcomponents": [
+    "SelectTrigger",
+    "SelectValue",
+    "SelectContent",
+    "SelectItem",
+    "SelectGroup",
+    "SelectLabel",
+    "SelectSeparator"
+  ],
+  "props": [
+    { "name": "value", "type": "string", "required": false },
+    { "name": "onValueChange", "type": "(v: string) => void", "required": false },
+    { "name": "defaultValue", "type": "string", "required": false },
+    { "name": "disabled", "type": "boolean", "required": false }
+  ],
+  "tokensUsed": [
+    "color.surface.default",
+    "color.surface.raised",
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.border.default",
+    "color.border.subtle",
+    "radius.button",
+    "radius.card",
+    "shadow.popover"
+  ],
+  "a11y": {
+    "role": "combobox / listbox / option",
+    "keyboard": ["Space", "Enter", "Arrow", "Home", "End", "Type-ahead"],
+    "focus": "focus-visible ring on trigger",
+    "minHitTarget": "44px"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "tooltip": {
+    "bg": { "$value": "{color.text.primary}", "$type": "color" },
+    "fg": { "$value": "{color.surface.default}", "$type": "color" },
+    "radius": { "$value": "{radius.button}", "$type": "dimension" },
+    "shadow": { "$value": "{shadow.popover}", "$type": "shadow" }
+  }
+}

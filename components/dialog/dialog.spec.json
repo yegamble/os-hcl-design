@@ -1,0 +1,27 @@
+{
+  "name": "Dialog",
+  "category": "overlay",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-dialog",
+  "subcomponents": [
+    "DialogTrigger",
+    "DialogContent",
+    "DialogTitle",
+    "DialogDescription",
+    "DialogClose"
+  ],
+  "tokensUsed": [
+    "color.surface.raised",
+    "color.border.subtle",
+    "color.text.primary",
+    "radius.sheet",
+    "shadow.dialog"
+  ],
+  "a11y": {
+    "role": "dialog (modal)",
+    "keyboard": ["Tab", "Esc"],
+    "focus": "first focusable; focus-trapped",
+    "minHitTarget": "inherited"
+  }
+}

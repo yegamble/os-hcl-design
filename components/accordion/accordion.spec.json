@@ -1,0 +1,20 @@
+{
+  "name": "Accordion",
+  "category": "disclosure",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-accordion",
+  "subcomponents": ["AccordionItem", "AccordionTrigger", "AccordionContent"],
+  "tokensUsed": [
+    "color.text.primary",
+    "color.text.secondary",
+    "color.border.subtle",
+    "color.action.primary"
+  ],
+  "a11y": {
+    "role": "heading / button / region",
+    "keyboard": ["Space", "Enter", "Arrow", "Home", "End"],
+    "focus": "focus-visible ring on trigger",
+    "minHitTarget": "44px"
+  }
+}

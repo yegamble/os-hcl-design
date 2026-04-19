@@ -1,0 +1,11 @@
+{
+  "toast": {
+    "bg": { "$value": "{color.surface.raised}", "$type": "color" },
+    "border": { "$value": "{color.border.subtle}", "$type": "color" },
+    "title": { "$value": "{color.text.primary}", "$type": "color" },
+    "description": { "$value": "{color.text.secondary}", "$type": "color" },
+    "close": { "$value": "{color.text.tertiary}", "$type": "color" },
+    "radius": { "$value": "{radius.card}", "$type": "dimension" },
+    "shadow": { "$value": "{shadow.toast}", "$type": "shadow" }
+  }
+}

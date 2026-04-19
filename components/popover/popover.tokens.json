@@ -1,0 +1,9 @@
+{
+  "popover": {
+    "bg": { "$value": "{color.surface.raised}", "$type": "color" },
+    "border": { "$value": "{color.border.subtle}", "$type": "color" },
+    "fg": { "$value": "{color.text.primary}", "$type": "color" },
+    "radius": { "$value": "{radius.card}", "$type": "dimension" },
+    "shadow": { "$value": "{shadow.popover}", "$type": "shadow" }
+  }
+}

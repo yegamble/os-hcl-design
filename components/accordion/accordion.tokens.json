@@ -1,0 +1,12 @@
+{
+  "accordion": {
+    "trigger": {
+      "fg": { "$value": "{color.text.primary}", "$type": "color" },
+      "fgHover": { "$value": "{color.action.primary}", "$type": "color" }
+    },
+    "content": {
+      "fg": { "$value": "{color.text.secondary}", "$type": "color" }
+    },
+    "border": { "$value": "{color.border.subtle}", "$type": "color" }
+  }
+}

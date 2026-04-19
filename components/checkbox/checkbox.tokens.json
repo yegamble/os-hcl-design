@@ -1,0 +1,10 @@
+{
+  "checkbox": {
+    "bg": {
+      "default": { "$value": "{color.surface.default}", "$type": "color" },
+      "checked": { "$value": "{color.action.primary}", "$type": "color" }
+    },
+    "border": { "$value": "{color.border.default}", "$type": "color" },
+    "indicator": { "$value": "{color.action.primary-fg}", "$type": "color" }
+  }
+}

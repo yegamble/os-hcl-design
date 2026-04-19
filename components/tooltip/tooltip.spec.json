@@ -1,0 +1,24 @@
+{
+  "name": "Tooltip",
+  "category": "overlay",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-tooltip",
+  "subcomponents": ["TooltipProvider", "TooltipTrigger", "TooltipContent"],
+  "props": [
+    { "name": "sideOffset (Content)", "type": "number", "required": false, "default": 6 },
+    {
+      "name": "side (Content)",
+      "type": "'top' | 'right' | 'bottom' | 'left'",
+      "required": false,
+      "default": "top"
+    }
+  ],
+  "tokensUsed": ["color.text.primary", "color.surface.default", "radius.button", "shadow.popover"],
+  "a11y": {
+    "role": "tooltip",
+    "keyboard": ["Tab", "Esc"],
+    "focus": "shows on focus and hover",
+    "minHitTarget": "n/a"
+  }
+}

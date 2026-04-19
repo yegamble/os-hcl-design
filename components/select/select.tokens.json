@@ -1,0 +1,19 @@
+{
+  "select": {
+    "trigger": {
+      "bg": { "$value": "{color.surface.default}", "$type": "color" },
+      "fg": { "$value": "{color.text.primary}", "$type": "color" },
+      "border": { "$value": "{color.border.default}", "$type": "color" },
+      "radius": { "$value": "{radius.button}", "$type": "dimension" }
+    },
+    "content": {
+      "bg": { "$value": "{color.surface.raised}", "$type": "color" },
+      "border": { "$value": "{color.border.subtle}", "$type": "color" },
+      "radius": { "$value": "{radius.card}", "$type": "dimension" },
+      "shadow": { "$value": "{shadow.popover}", "$type": "shadow" }
+    },
+    "item": {
+      "bgHover": { "$value": "{color.surface.elevated}", "$type": "color" }
+    }
+  }
+}

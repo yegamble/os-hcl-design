@@ -1,0 +1,22 @@
+{
+  "name": "Popover",
+  "category": "overlay",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-popover",
+  "subcomponents": ["PopoverTrigger", "PopoverContent", "PopoverAnchor"],
+  "props": [{ "name": "sideOffset (Content)", "type": "number", "required": false, "default": 8 }],
+  "tokensUsed": [
+    "color.surface.raised",
+    "color.border.subtle",
+    "color.text.primary",
+    "radius.card",
+    "shadow.popover"
+  ],
+  "a11y": {
+    "role": "dialog (non-modal)",
+    "keyboard": ["Tab", "Esc"],
+    "focus": "first focusable inside content",
+    "minHitTarget": "inherited from trigger"
+  }
+}

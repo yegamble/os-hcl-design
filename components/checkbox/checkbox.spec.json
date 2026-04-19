@@ -1,0 +1,31 @@
+{
+  "name": "Checkbox",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-checkbox",
+  "props": [
+    { "name": "checked", "type": "boolean | 'indeterminate'", "required": false },
+    {
+      "name": "onCheckedChange",
+      "type": "(checked: boolean | 'indeterminate') => void",
+      "required": false
+    },
+    { "name": "disabled", "type": "boolean", "required": false },
+    { "name": "required", "type": "boolean", "required": false },
+    { "name": "name", "type": "string", "required": false },
+    { "name": "value", "type": "string", "required": false }
+  ],
+  "tokensUsed": [
+    "color.surface.default",
+    "color.border.default",
+    "color.action.primary",
+    "color.action.primary-fg"
+  ],
+  "a11y": {
+    "role": "checkbox",
+    "keyboard": ["Space"],
+    "focus": "focus-visible ring",
+    "minHitTarget": "44px (via label wrap)"
+  }
+}

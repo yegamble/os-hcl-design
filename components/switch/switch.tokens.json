@@ -1,0 +1,9 @@
+{
+  "switch": {
+    "track": {
+      "off": { "$value": "{color.border.default}", "$type": "color" },
+      "on": { "$value": "{color.action.primary}", "$type": "color" }
+    },
+    "thumb": { "$value": "{color.action.primary-fg}", "$type": "color" }
+  }
+}

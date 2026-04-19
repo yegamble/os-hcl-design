@@ -1,0 +1,31 @@
+{
+  "name": "Radio",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-radio-group",
+  "subcomponents": ["RadioGroup"],
+  "props": [
+    { "name": "value (RadioGroup)", "type": "string", "required": false },
+    { "name": "onValueChange (RadioGroup)", "type": "(v: string) => void", "required": false },
+    {
+      "name": "value (Radio)",
+      "type": "string",
+      "required": true,
+      "description": "The value of this option."
+    },
+    { "name": "disabled", "type": "boolean", "required": false }
+  ],
+  "tokensUsed": [
+    "color.surface.default",
+    "color.border.default",
+    "color.action.primary",
+    "radius.pill"
+  ],
+  "a11y": {
+    "role": "radiogroup / radio",
+    "keyboard": ["Arrow", "Space"],
+    "focus": "focus-visible ring",
+    "minHitTarget": "44px (via label wrap)"
+  }
+}

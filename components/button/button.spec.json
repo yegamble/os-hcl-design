@@ -1,0 +1,72 @@
+{
+  "name": "Button",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "variants": ["primary", "secondary", "ghost", "destructive"],
+  "sizes": ["sm", "md", "lg"],
+  "defaults": {
+    "variant": "primary",
+    "size": "md"
+  },
+  "props": [
+    {
+      "name": "variant",
+      "type": "'primary' | 'secondary' | 'ghost' | 'destructive'",
+      "required": false,
+      "default": "primary",
+      "description": "Visual intent."
+    },
+    {
+      "name": "size",
+      "type": "'sm' | 'md' | 'lg'",
+      "required": false,
+      "default": "md",
+      "description": "All sizes enforce min-h-11 (44px). Size varies font-size and horizontal padding only."
+    },
+    {
+      "name": "type",
+      "type": "'button' | 'submit' | 'reset'",
+      "required": false,
+      "default": "button",
+      "description": "Forwarded to the native <button>. Defaults to 'button' to avoid accidental form submission."
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "description": "Disables activation and applies disabled-state utilities."
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Merged via tailwind-merge; later values win on conflict."
+    }
+  ],
+  "tokensUsed": [
+    "color.action.primary",
+    "color.action.primary-hover",
+    "color.action.primary-active",
+    "color.action.primary-fg",
+    "color.action.destructive",
+    "color.action.destructive-hover",
+    "color.action.destructive-fg",
+    "color.surface.elevated",
+    "color.surface.default",
+    "color.text.primary",
+    "color.text.quaternary",
+    "color.border.subtle",
+    "color.border.default",
+    "radius.button",
+    "motion.duration.ui"
+  ],
+  "a11y": {
+    "role": "button",
+    "keyboard": ["Enter", "Space"],
+    "focus": "focus-visible ring (2px action-primary, 2px offset)",
+    "minHitTarget": "44px",
+    "notes": "Icon-only usage requires aria-label. Disabled state is announced by screen readers via the native disabled attribute."
+  }
+}

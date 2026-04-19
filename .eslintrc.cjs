@@ -34,6 +34,10 @@ module.exports = {
       rules: {
         'tailwindcss/no-arbitrary-value': 'error',
         'tailwindcss/classnames-order': 'warn',
+        // Tailwind v4 CSS-first @theme tokens aren't readable by this plugin
+        // without a JS config. Our local-rules/no-raw-hex-in-className +
+        // tailwindcss/no-arbitrary-value cover the real discipline checks.
+        'tailwindcss/no-custom-classname': 'off',
       },
     },
     {

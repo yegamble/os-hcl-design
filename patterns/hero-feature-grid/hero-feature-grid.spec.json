@@ -1,0 +1,52 @@
+{
+  "name": "HeroFeatureGrid",
+  "category": "pattern",
+  "status": "stable",
+  "version": "0.1.0",
+  "componentsUsed": ["Button", "Card", "Card.Body"],
+  "utilitiesUsed": [
+    "sticky-nav-blur",
+    "glass-regular",
+    "section-rhythm",
+    "display-type",
+    "bento-grid"
+  ],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Hero headline. One per viewport."
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": true,
+      "description": "One-sentence subtitle."
+    },
+    { "name": "cta", "type": "string", "required": true, "description": "Primary CTA label." },
+    {
+      "name": "features",
+      "type": "{ title: string; body: string }[]",
+      "required": true,
+      "description": "3-6 feature cards for the bento grid."
+    }
+  ],
+  "tokensUsed": [
+    "color.surface.default",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.border.subtle",
+    "material.regular.backdropFilter",
+    "material.regular.fallbackColor",
+    "space.gutter.section",
+    "space.gutter.card"
+  ],
+  "a11y": {
+    "role": "region",
+    "landmarks": ["nav aria-label=\"Primary\"", "section aria-label=\"Feature highlights\""],
+    "headingLevels": ["h1 in hero", "h3 in feature cards"],
+    "focusOrder": "nav Sign in → nav Get started → hero CTA primary → hero CTA ghost → (cards are inert)",
+    "notes": "Glass nav auto-swaps to solid under prefers-reduced-transparency."
+  }
+}

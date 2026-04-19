@@ -304,11 +304,11 @@ Type: Feature
 - [x] Task 7: Custom lint rules (raw-hex + semantic-tokens-only)
 - [x] Task 8: CI quality-gate scripts (depth, doc-sections, AGENTS size, contrast, CSS budget, baseline count) + `ci` composition
 - [x] Task 9: Button component (reference template — interactive primitive)
-- [ ] Task 10: Card component (reference template — display primitive)
+- [x] Task 10: Card component (reference template — display primitive)
 - [ ] Task 11: hero-feature-grid pattern
 - [ ] Task 12: Playwright visual regression + baselines capture + final CI end-to-end verification
 
-**Total Tasks:** 12 | **Completed:** 9 | **Remaining:** 3
+**Total Tasks:** 12 | **Completed:** 10 | **Remaining:** 2
 
 ## Implementation Tasks
 

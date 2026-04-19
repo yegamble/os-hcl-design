@@ -1,0 +1,8 @@
+{
+  "avatar": {
+    "bg": { "$value": "{color.surface.elevated}", "$type": "color" },
+    "fg": { "$value": "{color.text.primary}", "$type": "color" },
+    "border": { "$value": "{color.border.subtle}", "$type": "color" },
+    "radius": { "$value": "{radius.pill}", "$type": "dimension" }
+  }
+}

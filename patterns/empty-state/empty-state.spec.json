@@ -1,0 +1,21 @@
+{
+  "name": "EmptyState",
+  "category": "pattern",
+  "status": "stable",
+  "version": "0.1.0",
+  "componentsUsed": ["Button"],
+  "props": [
+    { "name": "icon", "type": "ReactNode", "required": false },
+    { "name": "title", "type": "string", "required": true },
+    { "name": "description", "type": "string", "required": false },
+    { "name": "actionLabel", "type": "string", "required": false },
+    { "name": "onAction", "type": "() => void", "required": false }
+  ],
+  "tokensUsed": ["color.text.primary", "color.text.secondary", "color.text.tertiary"],
+  "a11y": {
+    "role": "region",
+    "landmarks": ["section aria-label={title}"],
+    "headingLevels": ["h3"],
+    "minHitTarget": "44px (via Button)"
+  }
+}

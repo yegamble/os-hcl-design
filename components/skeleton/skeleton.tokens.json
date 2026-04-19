@@ -1,0 +1,6 @@
+{
+  "skeleton": {
+    "bg": { "$value": "{color.surface.elevated}", "$type": "color" },
+    "radius": { "$value": "{radius.button}", "$type": "dimension" }
+  }
+}

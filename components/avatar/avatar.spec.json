@@ -1,0 +1,26 @@
+{
+  "name": "Avatar",
+  "category": "data-display",
+  "status": "stable",
+  "version": "0.1.0",
+  "sizes": ["sm", "md", "lg", "xl"],
+  "defaults": { "size": "md" },
+  "props": [
+    {
+      "name": "alt",
+      "type": "string",
+      "required": true,
+      "description": "Accessible name; drives initials fallback."
+    },
+    { "name": "src", "type": "string", "required": false },
+    { "name": "initials", "type": "string", "required": false },
+    { "name": "size", "type": "'sm' | 'md' | 'lg' | 'xl'", "required": false, "default": "md" }
+  ],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.border.subtle",
+    "radius.pill"
+  ],
+  "a11y": { "role": "img", "keyboard": [], "focus": "none", "minHitTarget": "n/a" }
+}

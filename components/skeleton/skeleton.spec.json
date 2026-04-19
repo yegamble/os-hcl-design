@@ -1,0 +1,16 @@
+{
+  "name": "Skeleton",
+  "category": "feedback",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Sets width, height, and shape."
+    }
+  ],
+  "tokensUsed": ["color.surface.elevated", "radius.button"],
+  "a11y": { "role": "none", "keyboard": [], "focus": "none", "minHitTarget": "n/a" }
+}

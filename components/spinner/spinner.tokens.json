@@ -1,0 +1,5 @@
+{
+  "spinner": {
+    "color": { "$value": "{color.action.primary}", "$type": "color" }
+  }
+}

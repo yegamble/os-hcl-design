@@ -1,0 +1,24 @@
+{
+  "name": "Spinner",
+  "category": "feedback",
+  "status": "stable",
+  "version": "0.1.0",
+  "sizes": ["sm", "md", "lg"],
+  "defaults": { "size": "md" },
+  "props": [
+    { "name": "size", "type": "'sm' | 'md' | 'lg'", "required": false, "default": "md" },
+    {
+      "name": "aria-label",
+      "type": "string",
+      "required": false,
+      "description": "Accessible name; upgrades to role=status."
+    }
+  ],
+  "tokensUsed": ["color.action.primary"],
+  "a11y": {
+    "role": "status (when labeled)",
+    "keyboard": [],
+    "focus": "none",
+    "minHitTarget": "n/a"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Alert",
+  "category": "feedback",
+  "status": "stable",
+  "version": "0.1.0",
+  "subcomponents": ["AlertTitle", "AlertDescription"],
+  "variants": ["neutral", "info", "success", "warning", "destructive"],
+  "defaults": { "variant": "neutral", "role": "alert" },
+  "props": [
+    {
+      "name": "variant",
+      "type": "'neutral' | 'info' | 'success' | 'warning' | 'destructive'",
+      "required": false,
+      "default": "neutral"
+    },
+    { "name": "role", "type": "'alert' | 'status'", "required": false, "default": "alert" }
+  ],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.border.subtle",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.destructive",
+    "radius.card"
+  ],
+  "a11y": { "role": "alert", "keyboard": [], "focus": "none", "minHitTarget": "n/a" }
+}

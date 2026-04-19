@@ -1,0 +1,17 @@
+{
+  "name": "Separator",
+  "category": "layout",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    {
+      "name": "orientation",
+      "type": "'horizontal' | 'vertical'",
+      "required": false,
+      "default": "horizontal"
+    },
+    { "name": "decorative", "type": "boolean", "required": false, "default": true }
+  ],
+  "tokensUsed": ["color.separator.default"],
+  "a11y": { "role": "separator | none", "keyboard": [], "focus": "none", "minHitTarget": "n/a" }
+}

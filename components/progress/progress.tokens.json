@@ -1,0 +1,7 @@
+{
+  "progress": {
+    "track": { "$value": "{color.surface.elevated}", "$type": "color" },
+    "fill": { "$value": "{color.action.primary}", "$type": "color" },
+    "radius": { "$value": "{radius.pill}", "$type": "dimension" }
+  }
+}

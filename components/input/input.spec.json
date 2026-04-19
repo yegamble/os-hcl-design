@@ -1,0 +1,33 @@
+{
+  "name": "Input",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "sizes": ["sm", "md", "lg"],
+  "defaults": { "size": "md" },
+  "props": [
+    {
+      "name": "size",
+      "type": "'sm' | 'md' | 'lg'",
+      "required": false,
+      "default": "md",
+      "description": "Padding + type size."
+    },
+    { "name": "className", "type": "string", "required": false }
+  ],
+  "tokensUsed": [
+    "color.surface.default",
+    "color.text.primary",
+    "color.text.tertiary",
+    "color.border.default",
+    "color.action.primary",
+    "color.action.destructive",
+    "radius.button"
+  ],
+  "a11y": {
+    "role": "textbox",
+    "keyboard": ["Tab", "Type"],
+    "focus": "focus-visible ring",
+    "minHitTarget": "44px"
+  }
+}

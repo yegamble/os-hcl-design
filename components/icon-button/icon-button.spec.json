@@ -1,0 +1,38 @@
+{
+  "name": "IconButton",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "variants": ["primary", "secondary", "ghost"],
+  "defaults": { "variant": "ghost" },
+  "props": [
+    {
+      "name": "aria-label",
+      "type": "string",
+      "required": true,
+      "description": "Accessible name; required at the type level for icon-only buttons."
+    },
+    {
+      "name": "variant",
+      "type": "'primary' | 'secondary' | 'ghost'",
+      "required": false,
+      "default": "ghost",
+      "description": "Visual intent."
+    }
+  ],
+  "tokensUsed": [
+    "color.action.primary",
+    "color.action.primary-hover",
+    "color.action.primary-fg",
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.border.default",
+    "radius.button"
+  ],
+  "a11y": {
+    "role": "button",
+    "keyboard": ["Enter", "Space"],
+    "focus": "focus-visible ring (2px action-primary, 2px offset)",
+    "minHitTarget": "44px"
+  }
+}

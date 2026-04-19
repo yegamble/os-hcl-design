@@ -1,0 +1,37 @@
+{
+  "name": "Badge",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "variants": ["neutral", "info", "success", "warning", "destructive"],
+  "defaults": { "variant": "neutral" },
+  "props": [
+    {
+      "name": "variant",
+      "type": "'neutral' | 'info' | 'success' | 'warning' | 'destructive'",
+      "required": false,
+      "default": "neutral",
+      "description": "Visual intent."
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Merged via tailwind-merge."
+    }
+  ],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.link",
+    "color.text.destructive",
+    "color.border.subtle",
+    "radius.pill"
+  ],
+  "a11y": {
+    "role": "none",
+    "keyboard": [],
+    "focus": "none (inert)",
+    "minHitTarget": "n/a"
+  }
+}

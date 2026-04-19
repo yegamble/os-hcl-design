@@ -1,0 +1,8 @@
+{
+  "textarea": {
+    "bg": { "$value": "{color.surface.default}", "$type": "color" },
+    "fg": { "$value": "{color.text.primary}", "$type": "color" },
+    "border": { "$value": "{color.border.default}", "$type": "color" },
+    "radius": { "$value": "{radius.button}", "$type": "dimension" }
+  }
+}

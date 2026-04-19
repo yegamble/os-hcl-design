@@ -1,0 +1,8 @@
+{
+  "iconButton": {
+    "size": {
+      "default": { "$value": "44px", "$type": "dimension" }
+    },
+    "radius": { "$value": "{radius.button}", "$type": "dimension" }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Nav",
+  "category": "navigation",
+  "status": "stable",
+  "version": "0.1.0",
+  "subcomponents": ["NavList", "NavItem"],
+  "props": [
+    {
+      "name": "aria-label",
+      "type": "string",
+      "required": true,
+      "description": "Accessible name for the landmark."
+    },
+    {
+      "name": "active (NavItem)",
+      "type": "boolean",
+      "required": false,
+      "description": "Sets aria-current='page' and active styling."
+    },
+    {
+      "name": "href (NavItem)",
+      "type": "string",
+      "required": true,
+      "description": "Destination URL."
+    }
+  ],
+  "tokensUsed": [
+    "color.text.primary",
+    "color.text.secondary",
+    "color.surface.elevated",
+    "color.action.primary",
+    "radius.button"
+  ],
+  "a11y": {
+    "role": "navigation",
+    "keyboard": ["Tab"],
+    "focus": "focus-visible ring on each NavItem",
+    "minHitTarget": "44px"
+  }
+}

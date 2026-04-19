@@ -1,0 +1,12 @@
+{
+  "input": {
+    "bg": { "$value": "{color.surface.default}", "$type": "color" },
+    "fg": { "$value": "{color.text.primary}", "$type": "color" },
+    "placeholder": { "$value": "{color.text.tertiary}", "$type": "color" },
+    "border": {
+      "default": { "$value": "{color.border.default}", "$type": "color" },
+      "invalid": { "$value": "{color.action.destructive}", "$type": "color" }
+    },
+    "radius": { "$value": "{radius.button}", "$type": "dimension" }
+  }
+}

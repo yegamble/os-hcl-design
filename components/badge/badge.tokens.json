@@ -1,0 +1,16 @@
+{
+  "badge": {
+    "bg": {
+      "default": { "$value": "{color.surface.elevated}", "$type": "color" }
+    },
+    "fg": {
+      "neutral": { "$value": "{color.text.primary}", "$type": "color" },
+      "info": { "$value": "{color.text.link}", "$type": "color" },
+      "destructive": { "$value": "{color.text.destructive}", "$type": "color" }
+    },
+    "border": {
+      "default": { "$value": "{color.border.subtle}", "$type": "color" }
+    },
+    "radius": { "$value": "{radius.pill}", "$type": "dimension" }
+  }
+}

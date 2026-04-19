@@ -19,14 +19,46 @@
 - [Semantic tokens](tokens/semantic.tokens.json): role-named aliases with light/dark/high-contrast mode extensions.
 - [Component tokens](tokens/component.tokens.json): per-component overrides (semantic-only references).
 
-## Components
+## Components — Primitives
 
-- [Button](components/button/button.md): primary / secondary / ghost / destructive, 3 sizes, 44px floor, focus-visible ring.
-- [Card](components/card/card.md): default / elevated / outlined / glass variants, compound sub-components.
+- [Button](components/button/button.md): primary/secondary/ghost/destructive × sm/md/lg, 44px floor, focus-visible ring.
+- [IconButton](components/icon-button/icon-button.md): icon-only; aria-label enforced at the type level.
+- [Input](components/input/input.md): native `<input>` with aria-invalid error state and sm/md/lg sizes.
+- [Textarea](components/textarea/textarea.md): multi-line input, vertical-resize only.
+- [Select](components/select/select.md): Radix combobox with portal listbox + type-ahead.
+- [Checkbox](components/checkbox/checkbox.md): Radix checkbox; tri-state support.
+- [Radio + RadioGroup](components/radio/radio.md): Radix radio-group with roving tabindex.
+- [Switch](components/switch/switch.md): binary on/off toggle via Radix.
+- [Badge](components/badge/badge.md): pill-shaped inert label with intent variants.
+- [Avatar](components/avatar/avatar.md): `<img>` with auto-initials fallback; 4 sizes.
+
+## Components — Overlays
+
+- [Dialog](components/dialog/dialog.md): focus-trapped modal via Radix Dialog.
+- [Popover](components/popover/popover.md): non-modal overlay via Radix Popover.
+- [Tooltip](components/tooltip/tooltip.md): hover/focus hint via Radix Tooltip.
+- [Toast](components/toast/toast.md): transient notification via Radix Toast.
+
+## Components — Navigation / Disclosure
+
+- [Nav](components/nav/nav.md): presentational `<nav>` + list + aria-current active state.
+- [Tabs](components/tabs/tabs.md): Radix tabs with pill-shaped selected indicator.
+- [Accordion](components/accordion/accordion.md): Radix accordion with chevron-rotate indicator.
+- [Separator](components/separator/separator.md): horizontal/vertical rule.
+
+## Components — Feedback
+
+- [Alert](components/alert/alert.md): inline `role="alert"` with 5 intent variants.
+- [Spinner](components/spinner/spinner.md): indeterminate loader; labelable via aria-label.
+- [Progress](components/progress/progress.md): determinate or indeterminate progress bar.
+- [Skeleton](components/skeleton/skeleton.md): animated loading placeholder.
 
 ## Patterns
 
-- [Hero + Feature Grid](patterns/hero-feature-grid/hero-feature-grid.md): full-bleed hero with sticky glass nav + 3-column bento grid of Cards.
+- [Hero Feature Grid](patterns/hero-feature-grid/hero-feature-grid.md): sticky glass nav + display hero + bento grid.
+- [Pricing](patterns/pricing/pricing.md): 3-tier comparison with featured tier badge + CTAs.
+- [Auth Form](patterns/auth-form/auth-form.md): sign-in/sign-up with optional OAuth shoulder and inline error surface.
+- [Empty State](patterns/empty-state/empty-state.md): centered icon + title + description + optional CTA.
 
 ## Quality gates
 

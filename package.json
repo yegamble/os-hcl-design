@@ -20,8 +20,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "build-tokens": "node build-tokens.mjs",
-    "build": "pnpm run build-tokens",
-    "ci": "pnpm run typecheck && pnpm run lint && pnpm run format:check && pnpm run build-tokens"
+    "build-llms-full": "node scripts/build-llms-full.mjs",
+    "build": "pnpm run build-tokens && pnpm run build-llms-full",
+    "ci": "pnpm run typecheck && pnpm run lint && pnpm run format:check && pnpm run build-tokens && pnpm run build-llms-full"
   },
   "dependencies": {
     "clsx": "^2.1.1",

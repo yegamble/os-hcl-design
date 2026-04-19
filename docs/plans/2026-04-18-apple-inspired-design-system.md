@@ -297,8 +297,8 @@ Type: Feature
 
 - [x] Task 1: Repo skeleton + base toolchain + public GitHub repo
 - [x] Task 2: Tailwind v4 + Vite + Style Dictionary pipeline (no glass utilities yet)
-- [ ] Task 3: DTCG primitive tokens
-- [ ] Task 4: DTCG semantic + component tokens + glass utilities
+- [x] Task 3: DTCG primitive tokens
+- [x] Task 4: DTCG semantic + component tokens + glass utilities
 - [ ] Task 5: Docs layer — foundations (7 files) + component template + AI retrieval scaffolding
 - [ ] Task 6: Storybook 9 + Vite + a11y + toolbar globals
 - [ ] Task 7: Custom lint rules (raw-hex + semantic-tokens-only)
@@ -308,7 +308,7 @@ Type: Feature
 - [ ] Task 11: hero-feature-grid pattern
 - [ ] Task 12: Playwright visual regression + baselines capture + final CI end-to-end verification
 
-**Total Tasks:** 12 | **Completed:** 2 | **Remaining:** 10
+**Total Tasks:** 12 | **Completed:** 4 | **Remaining:** 8
 
 ## Implementation Tasks
 

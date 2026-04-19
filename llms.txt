@@ -1,0 +1,33 @@
+# os-hcl-design
+
+> Apple-inspired design system codified as machine-readable context for AI coding agents. Foundations, DTCG v1 tokens, Tailwind v4 reference components, and composed patterns — authored for Claude Code and other AI consumers first, human readers second.
+
+## Foundations
+
+- [Principles](foundations/principles.md): Deference, Clarity, Depth plus the hard-constraint table (weights, accents, hit targets, contrast, reduced motion/transparency).
+- [Typography](foundations/typography.md): `-apple-system` font stack, fluid type role scale (caption2 → hero-lg), hero tracking, weight discipline.
+- [Color](foundations/color.md): semantic token roles (text, surface, separator, border, action, accent) with light/dark/high-contrast modes.
+- [Spacing](foundations/spacing.md): 4/8pt scale, layout margins, section rhythm, 65ch body measure, bento grid gaps.
+- [Motion](foundations/motion.md): duration + spring-easing tokens, reduced-motion contract, scroll-driven patterns.
+- [Materials](foundations/materials.md): Liquid-Glass web approximation, three tiers, mandatory solid fallback, reduced-transparency contract.
+- [Accessibility](foundations/accessibility.md): WCAG 2.1 AA, focus-visible rings, 44px hit targets, keyboard map, Dynamic Type equivalence.
+- [Component template](foundations/component-template.md): canonical 11-section structure for every component/pattern `.md`.
+
+## Tokens (DTCG v1 JSON)
+
+- [Primitive tokens](tokens/primitive.tokens.json): 8 color ramps × 11 steps + spacing + radii + shadows + type scale + motion.
+- [Semantic tokens](tokens/semantic.tokens.json): role-named aliases with light/dark/high-contrast mode extensions.
+- [Component tokens](tokens/component.tokens.json): per-component overrides (semantic-only references).
+
+## Components
+
+- [Button](components/button/button.md): primary / secondary / ghost / destructive, 3 sizes, 44px floor, focus-visible ring.
+- [Card](components/card/card.md): default / elevated / outlined / glass variants, compound sub-components.
+
+## Patterns
+
+- [Hero + Feature Grid](patterns/hero-feature-grid/hero-feature-grid.md): full-bleed hero with sticky glass nav + 3-column bento grid of Cards.
+
+## Quality gates
+
+CI enforces: TypeScript strict, ESLint (raw-hex ban, no arbitrary values, no `dark:` prefixes in component code), stylelint (semantic tokens only), Prettier class ordering, depth-check (every component dir has all 5 sibling files), 11-section doc check, AGENTS.md ≤ 2048 bytes, WCAG token-contrast per mode, Storybook axe a11y pass, Playwright visual regression (default / dark / reduced-motion / reduced-transparency variants), CSS bundle < 15 KB gzip, keyboard activation + hit-target verification.

@@ -303,12 +303,12 @@ Type: Feature
 - [x] Task 6: Storybook 9 + Vite + a11y + toolbar globals
 - [x] Task 7: Custom lint rules (raw-hex + semantic-tokens-only)
 - [x] Task 8: CI quality-gate scripts (depth, doc-sections, AGENTS size, contrast, CSS budget, baseline count) + `ci` composition
-- [ ] Task 9: Button component (reference template — interactive primitive)
+- [x] Task 9: Button component (reference template — interactive primitive)
 - [ ] Task 10: Card component (reference template — display primitive)
 - [ ] Task 11: hero-feature-grid pattern
 - [ ] Task 12: Playwright visual regression + baselines capture + final CI end-to-end verification
 
-**Total Tasks:** 12 | **Completed:** 8 | **Remaining:** 4
+**Total Tasks:** 12 | **Completed:** 9 | **Remaining:** 3
 
 ## Implementation Tasks
 

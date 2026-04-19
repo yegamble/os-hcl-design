@@ -1,0 +1,63 @@
+{
+  "name": "Card",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "variants": ["default", "elevated", "outlined", "glass"],
+  "paddings": ["sm", "md", "lg"],
+  "radii": ["md", "lg"],
+  "defaults": {
+    "variant": "default",
+    "padding": "md",
+    "radius": "md"
+  },
+  "subcomponents": ["Card.Header", "Card.Body", "Card.Footer"],
+  "props": [
+    {
+      "name": "variant",
+      "type": "'default' | 'elevated' | 'outlined' | 'glass'",
+      "required": false,
+      "default": "default",
+      "description": "Visual intent."
+    },
+    {
+      "name": "padding",
+      "type": "'sm' | 'md' | 'lg'",
+      "required": false,
+      "default": "md",
+      "description": "Internal padding applied to slots via --card-px / --card-py."
+    },
+    {
+      "name": "radius",
+      "type": "'md' | 'lg'",
+      "required": false,
+      "default": "md",
+      "description": "Corner radius. Maps to radius.card or radius.sheet."
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Merged via tailwind-merge."
+    }
+  ],
+  "tokensUsed": [
+    "color.surface.raised",
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.tertiary",
+    "color.border.subtle",
+    "color.border.default",
+    "radius.card",
+    "radius.sheet",
+    "shadow.card"
+  ],
+  "a11y": {
+    "role": "group",
+    "keyboard": [],
+    "focus": "none — Card is inert unless it contains focusable children",
+    "minHitTarget": "n/a",
+    "notes": "glass variant auto-applies solid fallback under prefers-reduced-transparency via glass-regular utility."
+  }
+}

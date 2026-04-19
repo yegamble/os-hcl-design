@@ -1,0 +1,24 @@
+{
+  "card": {
+    "bg": {
+      "default": { "$value": "{color.surface.raised}", "$type": "color" },
+      "elevated": { "$value": "{color.surface.elevated}", "$type": "color" }
+    },
+    "border": {
+      "subtle": { "$value": "{color.border.subtle}", "$type": "color" },
+      "default": { "$value": "{color.border.default}", "$type": "color" }
+    },
+    "shadow": {
+      "default": { "$value": "{shadow.card}", "$type": "shadow" }
+    },
+    "radius": {
+      "md": { "$value": "{radius.card}", "$type": "dimension" },
+      "lg": { "$value": "{radius.sheet}", "$type": "dimension" }
+    },
+    "padding": {
+      "sm": { "$value": "{space.16}", "$type": "dimension" },
+      "md": { "$value": "{space.gutter.card}", "$type": "dimension" },
+      "lg": { "$value": "{space.32}", "$type": "dimension" }
+    }
+  }
+}

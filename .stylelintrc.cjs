@@ -1,11 +1,20 @@
 module.exports = {
   extends: ['stylelint-config-standard'],
+  plugins: [require.resolve('./stylelint-rules/semantic-tokens-only.cjs')],
   ignoreFiles: [
     'node_modules/**',
     'storybook-static/**',
     'dist/**',
     'build/**',
     'styles/tokens.css',
+  ],
+  overrides: [
+    {
+      files: ['components/**/*.css', 'patterns/**/*.css'],
+      rules: {
+        'local/semantic-tokens-only': true,
+      },
+    },
   ],
   rules: {
     'no-descending-specificity': null,

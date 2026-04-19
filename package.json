@@ -24,7 +24,8 @@
     "dev": "storybook dev -p 6006 --no-open",
     "build:storybook": "storybook build",
     "build": "pnpm run build-tokens && pnpm run build-llms-full && pnpm run build:storybook",
-    "ci": "pnpm run typecheck && pnpm run lint && pnpm run format:check && pnpm run build-tokens && pnpm run build-llms-full"
+    "test:lint-rules": "node eslint-local-rules/__tests__/no-raw-hex-in-className.test.cjs",
+    "ci": "pnpm run typecheck && pnpm run lint && pnpm run format:check && pnpm run test:lint-rules && pnpm run build-tokens && pnpm run build-llms-full"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -47,6 +48,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-local-rules": "^3.0.2",
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-tailwindcss": "^3.17.4",

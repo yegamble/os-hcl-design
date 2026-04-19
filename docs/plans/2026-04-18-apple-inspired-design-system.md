@@ -300,7 +300,7 @@ Type: Feature
 - [x] Task 3: DTCG primitive tokens
 - [x] Task 4: DTCG semantic + component tokens + glass utilities
 - [x] Task 5: Docs layer — foundations (7 files) + component template + AI retrieval scaffolding
-- [ ] Task 6: Storybook 9 + Vite + a11y + toolbar globals
+- [x] Task 6: Storybook 9 + Vite + a11y + toolbar globals
 - [ ] Task 7: Custom lint rules (raw-hex + semantic-tokens-only)
 - [ ] Task 8: CI quality-gate scripts (depth, doc-sections, AGENTS size, contrast, CSS budget, baseline count) + `ci` composition
 - [ ] Task 9: Button component (reference template — interactive primitive)
@@ -308,7 +308,7 @@ Type: Feature
 - [ ] Task 11: hero-feature-grid pattern
 - [ ] Task 12: Playwright visual regression + baselines capture + final CI end-to-end verification
 
-**Total Tasks:** 12 | **Completed:** 5 | **Remaining:** 7
+**Total Tasks:** 12 | **Completed:** 6 | **Remaining:** 6
 
 ## Implementation Tasks
 

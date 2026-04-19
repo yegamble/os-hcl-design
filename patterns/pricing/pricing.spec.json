@@ -1,0 +1,32 @@
+{
+  "name": "Pricing",
+  "category": "pattern",
+  "status": "stable",
+  "version": "0.1.0",
+  "componentsUsed": ["Button", "Card", "Card.Body", "Badge"],
+  "utilitiesUsed": ["section-rhythm", "bento-grid", "display-type"],
+  "props": [
+    { "name": "title", "type": "string", "required": true },
+    { "name": "subtitle", "type": "string", "required": true },
+    {
+      "name": "tiers",
+      "type": "{ name: string; price: string; period: string; features: string[]; cta: string; featured?: boolean }[]",
+      "required": true
+    }
+  ],
+  "tokensUsed": [
+    "color.surface.default",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.tertiary",
+    "color.action.primary",
+    "space.gutter.section",
+    "space.gutter.card"
+  ],
+  "a11y": {
+    "role": "region",
+    "landmarks": ["section aria-label=\"Pricing\""],
+    "headingLevels": ["h2 in section heading", "h3 per tier"],
+    "minHitTarget": "44px (via Button)"
+  }
+}

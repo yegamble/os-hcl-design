@@ -1,0 +1,34 @@
+{
+  "name": "AuthForm",
+  "category": "pattern",
+  "status": "stable",
+  "version": "0.1.0",
+  "componentsUsed": ["Button", "Card", "Card.Body", "Input"],
+  "utilitiesUsed": [],
+  "props": [
+    { "name": "mode", "type": "'sign-in' | 'sign-up'", "required": false, "default": "sign-in" },
+    {
+      "name": "onSubmit",
+      "type": "(email: string, password: string) => Promise<void> | void",
+      "required": false
+    },
+    { "name": "showGoogle", "type": "boolean", "required": false, "default": true }
+  ],
+  "tokensUsed": [
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.tertiary",
+    "color.text.link",
+    "color.text.destructive",
+    "color.border.subtle",
+    "color.action.primary",
+    "radius.button"
+  ],
+  "a11y": {
+    "role": "form",
+    "landmarks": ["card containing h1 and form"],
+    "errorPattern": "inline <p role=\"alert\"> linked via aria-describedby on both inputs",
+    "autoComplete": ["email", "current-password", "new-password"],
+    "minHitTarget": "44px (via Input + Button)"
+  }
+}

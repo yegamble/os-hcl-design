@@ -52,22 +52,22 @@
         }
       },
       "link": {
-        "$value": "{color.blue.500}",
+        "$value": "{color.blue.600}",
         "$type": "color",
         "$extensions": {
           "modes": {
-            "dark": { "$value": "{color.blue.400}" },
-            "high-contrast": { "$value": "{color.blue.700}" }
+            "dark": { "$value": "{color.blue.300}" },
+            "high-contrast": { "$value": "{color.blue.800}" }
           }
         }
       },
       "destructive": {
-        "$value": "{color.red.500}",
+        "$value": "{color.red.700}",
         "$type": "color",
         "$extensions": {
           "modes": {
-            "dark": { "$value": "{color.red.400}" },
-            "high-contrast": { "$value": "{color.red.700}" }
+            "dark": { "$value": "{color.red.300}" },
+            "high-contrast": { "$value": "{color.red.900}" }
           }
         }
       }

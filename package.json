@@ -25,7 +25,13 @@
     "build:storybook": "storybook build",
     "build": "pnpm run build-tokens && pnpm run build-llms-full && pnpm run build:storybook",
     "test:lint-rules": "node eslint-local-rules/__tests__/no-raw-hex-in-className.test.cjs",
-    "ci": "pnpm run typecheck && pnpm run lint && pnpm run format:check && pnpm run test:lint-rules && pnpm run build-tokens && pnpm run build-llms-full"
+    "check:depth": "node scripts/check-component-depth.mjs",
+    "check:doc-sections": "node scripts/check-doc-sections.mjs",
+    "check:agents-size": "node scripts/check-agents-md-size.mjs",
+    "check:token-contrast": "node scripts/check-token-contrast.mjs",
+    "check:css-budget": "node scripts/check-css-budget.mjs",
+    "check:baseline-count": "node scripts/check-baseline-count.mjs",
+    "ci": "pnpm run typecheck && pnpm run lint && pnpm run format:check && pnpm run test:lint-rules && pnpm run build-tokens && pnpm run build-llms-full && pnpm run check:depth && pnpm run check:doc-sections && pnpm run check:agents-size && pnpm run check:token-contrast && pnpm run check:baseline-count && pnpm run build:storybook && pnpm run check:css-budget"
   },
   "dependencies": {
     "clsx": "^2.1.1",

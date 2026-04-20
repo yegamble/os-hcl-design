@@ -1,0 +1,18 @@
+{
+  "datePicker": {
+    "trigger": {
+      "bg": { "$value": "{color.surface.default}", "$type": "color" },
+      "fg": { "$value": "{color.text.primary}", "$type": "color" },
+      "placeholder": { "$value": "{color.text.tertiary}", "$type": "color" },
+      "border": { "$value": "{color.border.default}", "$type": "color" },
+      "radius": { "$value": "{radius.button}", "$type": "dimension" }
+    },
+    "content": {
+      "bg": { "$value": "{color.surface.raised}", "$type": "color" },
+      "radius": { "$value": "{radius.card}", "$type": "dimension" }
+    },
+    "day": {
+      "selected": { "$value": "{color.action.primary}", "$type": "color" }
+    }
+  }
+}

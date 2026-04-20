@@ -1,0 +1,37 @@
+{
+  "name": "DashboardHeader",
+  "category": "pattern",
+  "status": "stable",
+  "version": "0.1.0",
+  "componentsUsed": ["Avatar", "Button", "Input", "DropdownMenu"],
+  "utilitiesUsed": ["sticky-nav-blur", "glass-regular"],
+  "props": [
+    { "name": "brand", "type": "ReactNode", "required": true },
+    {
+      "name": "nav",
+      "type": "{ href: string; label: string; active?: boolean }[]",
+      "required": true
+    },
+    { "name": "user", "type": "{ name: string; email?: string; src?: string }", "required": true },
+    { "name": "onSearch", "type": "(query: string) => void", "required": false },
+    { "name": "onSignOut", "type": "() => void", "required": false }
+  ],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.tertiary",
+    "color.text.destructive",
+    "color.border.subtle",
+    "color.action.primary",
+    "material.regular.fallbackColor",
+    "radius.button",
+    "radius.pill"
+  ],
+  "a11y": {
+    "landmarks": ["header (banner)", "nav aria-label=\"Primary\"", "form role=\"search\""],
+    "activeIndicator": "aria-current=\"page\" + semibold",
+    "glassFallback": "honored automatically via glass-regular utility",
+    "minHitTarget": "44px"
+  }
+}

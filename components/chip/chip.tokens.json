@@ -1,0 +1,10 @@
+{
+  "chip": {
+    "bg": { "$value": "{color.surface.elevated}", "$type": "color" },
+    "bgSelected": { "$value": "{color.action.primary}", "$type": "color" },
+    "fg": { "$value": "{color.text.primary}", "$type": "color" },
+    "fgSelected": { "$value": "{color.action.primary-fg}", "$type": "color" },
+    "border": { "$value": "{color.border.subtle}", "$type": "color" },
+    "radius": { "$value": "{radius.pill}", "$type": "dimension" }
+  }
+}

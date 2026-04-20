@@ -1,0 +1,16 @@
+{
+  "commandPalette": {
+    "content": {
+      "bg": { "$value": "{color.surface.raised}", "$type": "color" },
+      "border": { "$value": "{color.border.subtle}", "$type": "color" },
+      "radius": { "$value": "{radius.sheet}", "$type": "dimension" },
+      "shadow": { "$value": "{shadow.dialog}", "$type": "shadow" }
+    },
+    "item": {
+      "fg": { "$value": "{color.text.primary}", "$type": "color" },
+      "bgHover": { "$value": "{color.surface.elevated}", "$type": "color" }
+    },
+    "group": { "$value": "{color.text.tertiary}", "$type": "color" },
+    "separator": { "$value": "{color.separator.default}", "$type": "color" }
+  }
+}

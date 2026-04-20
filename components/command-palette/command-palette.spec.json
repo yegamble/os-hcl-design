@@ -1,0 +1,41 @@
+{
+  "name": "CommandPalette",
+  "category": "overlay",
+  "status": "stable",
+  "version": "0.1.0",
+  "library": "cmdk + Dialog + Kbd",
+  "exports": ["CommandPalette", "useCommandPaletteShortcut"],
+  "props": [
+    { "name": "open", "type": "boolean", "required": true },
+    { "name": "onOpenChange", "type": "(open: boolean) => void", "required": true },
+    {
+      "name": "commands",
+      "type": "CommandPaletteCommand[]",
+      "required": true,
+      "description": "{id, label, group?, shortcut?[], onSelect}"
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "required": false,
+      "default": "Type a command or search…"
+    }
+  ],
+  "tokensUsed": [
+    "color.surface.raised",
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.tertiary",
+    "color.border.subtle",
+    "color.separator.default",
+    "radius.sheet",
+    "radius.button",
+    "shadow.dialog"
+  ],
+  "a11y": {
+    "role": "dialog + listbox",
+    "keyboard": ["⌘K / Ctrl+K", "Arrow", "Enter", "Esc"],
+    "focus": "focus-trapped; autofocus input",
+    "minHitTarget": "44px per item"
+  }
+}

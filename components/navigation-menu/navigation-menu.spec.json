@@ -1,0 +1,31 @@
+{
+  "name": "NavigationMenu",
+  "category": "navigation",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-navigation-menu",
+  "subcomponents": [
+    "NavigationMenuList",
+    "NavigationMenuItem",
+    "NavigationMenuTrigger",
+    "NavigationMenuContent",
+    "NavigationMenuLink"
+  ],
+  "tokensUsed": [
+    "color.surface.raised",
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.border.subtle",
+    "color.action.primary",
+    "radius.card",
+    "radius.button",
+    "shadow.popover"
+  ],
+  "a11y": {
+    "role": "navigation + menu",
+    "keyboard": ["Tab", "Arrow", "Enter", "Esc"],
+    "focus": "focus-visible on triggers and links",
+    "minHitTarget": "44px"
+  }
+}

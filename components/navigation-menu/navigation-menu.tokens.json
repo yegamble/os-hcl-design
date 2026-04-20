@@ -1,0 +1,18 @@
+{
+  "navigationMenu": {
+    "trigger": {
+      "fg": { "$value": "{color.text.secondary}", "$type": "color" },
+      "fgActive": { "$value": "{color.text.primary}", "$type": "color" }
+    },
+    "viewport": {
+      "bg": { "$value": "{color.surface.raised}", "$type": "color" },
+      "border": { "$value": "{color.border.subtle}", "$type": "color" },
+      "radius": { "$value": "{radius.card}", "$type": "dimension" },
+      "shadow": { "$value": "{shadow.popover}", "$type": "shadow" }
+    },
+    "link": {
+      "fg": { "$value": "{color.text.primary}", "$type": "color" },
+      "bgHover": { "$value": "{color.surface.elevated}", "$type": "color" }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "DatePicker",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "library": "react-day-picker@9 + date-fns@4",
+  "modes": ["single", "range"],
+  "defaults": { "mode": "single" },
+  "props": [
+    { "name": "mode", "type": "'single' | 'range'", "required": false, "default": "single" },
+    { "name": "value", "type": "Date | { from?: Date; to?: Date }", "required": false },
+    { "name": "onChange", "type": "(v) => void", "required": false },
+    { "name": "placeholder", "type": "string", "required": false, "default": "Pick a date" },
+    { "name": "disabled", "type": "boolean", "required": false }
+  ],
+  "tokensUsed": [
+    "color.surface.default",
+    "color.surface.raised",
+    "color.text.primary",
+    "color.text.tertiary",
+    "color.border.default",
+    "color.action.primary",
+    "radius.button",
+    "radius.card"
+  ],
+  "a11y": {
+    "role": "button + grid",
+    "keyboard": ["Arrow", "PageUp", "PageDown", "Home", "End", "Enter", "Esc"],
+    "focus": "trigger + roving tabindex in grid",
+    "minHitTarget": "44px"
+  }
+}

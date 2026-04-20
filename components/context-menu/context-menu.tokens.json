@@ -1,0 +1,16 @@
+{
+  "contextMenu": {
+    "content": {
+      "bg": { "$value": "{color.surface.raised}", "$type": "color" },
+      "border": { "$value": "{color.border.subtle}", "$type": "color" },
+      "radius": { "$value": "{radius.card}", "$type": "dimension" },
+      "shadow": { "$value": "{shadow.popover}", "$type": "shadow" }
+    },
+    "item": {
+      "fg": { "$value": "{color.text.primary}", "$type": "color" },
+      "bgHover": { "$value": "{color.surface.elevated}", "$type": "color" }
+    },
+    "label": { "$value": "{color.text.tertiary}", "$type": "color" },
+    "separator": { "$value": "{color.separator.default}", "$type": "color" }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Settings",
+  "category": "pattern",
+  "status": "stable",
+  "version": "0.1.0",
+  "componentsUsed": ["Card", "Card.Body"],
+  "exports": ["Settings", "SettingsSection"],
+  "props": [
+    { "name": "nav (Settings)", "type": "SettingsNavItem[]", "required": true },
+    { "name": "title (Settings)", "type": "string", "required": false, "default": "Settings" },
+    { "name": "title (SettingsSection)", "type": "string", "required": true },
+    { "name": "description (SettingsSection)", "type": "string", "required": false },
+    { "name": "children (SettingsSection)", "type": "ReactNode", "required": true }
+  ],
+  "tokensUsed": [
+    "color.surface.default",
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.border.subtle",
+    "color.action.primary",
+    "radius.button"
+  ],
+  "a11y": {
+    "landmarks": [
+      "aside aria-label=\"Settings navigation\"",
+      "nav aria-label=\"Sections\"",
+      "main"
+    ],
+    "headingLevels": ["h1 in sidebar", "h2 per section"],
+    "activeIndicator": "aria-current=\"page\" + semibold",
+    "minHitTarget": "44px"
+  }
+}

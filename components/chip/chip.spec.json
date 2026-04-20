@@ -1,0 +1,28 @@
+{
+  "name": "Chip",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    { "name": "label", "type": "string", "required": true },
+    { "name": "selected", "type": "boolean", "required": false, "default": false },
+    { "name": "interactive", "type": "boolean", "required": false, "default": false },
+    { "name": "removable", "type": "boolean", "required": false, "default": false },
+    { "name": "onRemove", "type": "() => void", "required": false },
+    { "name": "as", "type": "'button' | 'span'", "required": false }
+  ],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.border.subtle",
+    "color.action.primary",
+    "color.action.primary-fg",
+    "radius.pill"
+  ],
+  "a11y": {
+    "role": "none | button (interactive)",
+    "keyboard": ["Space", "Enter when interactive"],
+    "focus": "focus-visible when interactive",
+    "minHitTarget": "32px chip + 20px close"
+  }
+}

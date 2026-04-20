@@ -1,0 +1,31 @@
+{
+  "name": "ContextMenu",
+  "category": "overlay",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-context-menu",
+  "subcomponents": [
+    "ContextMenuTrigger",
+    "ContextMenuContent",
+    "ContextMenuItem",
+    "ContextMenuLabel",
+    "ContextMenuSeparator"
+  ],
+  "tokensUsed": [
+    "color.surface.raised",
+    "color.surface.elevated",
+    "color.border.subtle",
+    "color.text.primary",
+    "color.text.tertiary",
+    "color.separator.default",
+    "radius.card",
+    "radius.button",
+    "shadow.popover"
+  ],
+  "a11y": {
+    "role": "menu / menuitem",
+    "keyboard": ["Arrow", "Enter", "Esc", "Shift+F10"],
+    "focus": "focus-visible on item",
+    "minHitTarget": "44px per item"
+  }
+}

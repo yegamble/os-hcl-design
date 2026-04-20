@@ -1,0 +1,12 @@
+{
+  "pagination": {
+    "item": {
+      "fg": { "$value": "{color.text.secondary}", "$type": "color" },
+      "fgHover": { "$value": "{color.text.primary}", "$type": "color" },
+      "bgHover": { "$value": "{color.surface.elevated}", "$type": "color" },
+      "bgCurrent": { "$value": "{color.action.primary}", "$type": "color" },
+      "fgCurrent": { "$value": "{color.action.primary-fg}", "$type": "color" }
+    },
+    "radius": { "$value": "{radius.button}", "$type": "dimension" }
+  }
+}

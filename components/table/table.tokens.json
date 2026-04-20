@@ -1,0 +1,11 @@
+{
+  "table": {
+    "fg": { "$value": "{color.text.primary}", "$type": "color" },
+    "header": {
+      "bg": { "$value": "{color.surface.elevated}", "$type": "color" },
+      "fg": { "$value": "{color.text.secondary}", "$type": "color" }
+    },
+    "border": { "$value": "{color.border.subtle}", "$type": "color" },
+    "caption": { "$value": "{color.text.tertiary}", "$type": "color" }
+  }
+}

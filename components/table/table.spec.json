@@ -1,0 +1,27 @@
+{
+  "name": "Table",
+  "category": "data-display",
+  "status": "stable",
+  "version": "0.1.0",
+  "subcomponents": [
+    "Table.Header",
+    "Table.Body",
+    "Table.Row",
+    "Table.HeaderCell",
+    "Table.Cell",
+    "Table.Caption"
+  ],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.tertiary",
+    "color.border.subtle"
+  ],
+  "a11y": {
+    "role": "table",
+    "keyboard": ["Tab for inner focusables"],
+    "focus": "focus-visible on interactive cells",
+    "minHitTarget": "row height 44px via padding"
+  }
+}

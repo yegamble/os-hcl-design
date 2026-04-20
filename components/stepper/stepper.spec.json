@@ -1,0 +1,37 @@
+{
+  "name": "Stepper",
+  "category": "navigation",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    {
+      "name": "steps",
+      "type": "{ id: string; label: string; description?: string }[]",
+      "required": true
+    },
+    {
+      "name": "current",
+      "type": "number",
+      "required": true,
+      "description": "0-indexed active step"
+    },
+    {
+      "name": "orientation",
+      "type": "'horizontal' | 'vertical'",
+      "required": false,
+      "default": "horizontal"
+    },
+    { "name": "aria-label", "type": "string", "required": false, "default": "Steps" }
+  ],
+  "tokensUsed": [
+    "color.action.primary",
+    "color.action.primary-fg",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.tertiary",
+    "color.border.default",
+    "color.border.subtle",
+    "radius.pill"
+  ],
+  "a11y": { "role": "list", "keyboard": [], "focus": "none", "minHitTarget": "n/a" }
+}

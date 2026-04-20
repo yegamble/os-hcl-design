@@ -1,0 +1,5 @@
+{
+  "stack": {
+    "note": "No component tokens; consumes spacing primitives via Tailwind gap utilities."
+  }
+}

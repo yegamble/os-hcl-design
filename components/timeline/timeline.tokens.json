@@ -1,0 +1,12 @@
+{
+  "timeline": {
+    "bullet": {
+      "bg": { "$value": "{color.action.primary}", "$type": "color" },
+      "fg": { "$value": "{color.action.primary-fg}", "$type": "color" }
+    },
+    "connector": { "$value": "{color.border.subtle}", "$type": "color" },
+    "title": { "$value": "{color.text.primary}", "$type": "color" },
+    "meta": { "$value": "{color.text.tertiary}", "$type": "color" },
+    "content": { "$value": "{color.text.secondary}", "$type": "color" }
+  }
+}

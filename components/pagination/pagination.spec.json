@@ -1,0 +1,27 @@
+{
+  "name": "Pagination",
+  "category": "navigation",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    { "name": "page", "type": "number", "required": true },
+    { "name": "pageCount", "type": "number", "required": true },
+    { "name": "onPageChange", "type": "(page: number) => void", "required": true },
+    { "name": "siblingCount", "type": "number", "required": false, "default": 1 }
+  ],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.tertiary",
+    "color.action.primary",
+    "color.action.primary-fg",
+    "radius.button"
+  ],
+  "a11y": {
+    "role": "navigation",
+    "keyboard": ["Tab", "Enter"],
+    "focus": "focus-visible on each button",
+    "minHitTarget": "44px"
+  }
+}

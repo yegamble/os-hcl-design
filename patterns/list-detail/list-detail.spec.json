@@ -1,0 +1,31 @@
+{
+  "name": "ListDetail",
+  "category": "pattern",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    {
+      "name": "items",
+      "type": "{ id: string; title: string; subtitle?: string }[]",
+      "required": true
+    },
+    { "name": "selectedId", "type": "string", "required": false },
+    { "name": "onSelect", "type": "(id: string) => void", "required": true },
+    { "name": "detail", "type": "ReactNode", "required": true },
+    { "name": "emptyState", "type": "ReactNode", "required": false },
+    { "name": "listLabel", "type": "string", "required": false, "default": "List" }
+  ],
+  "tokensUsed": [
+    "color.surface.default",
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.tertiary",
+    "color.border.subtle",
+    "color.action.primary"
+  ],
+  "a11y": {
+    "landmarks": ["aside", "main"],
+    "activeIndicator": "aria-current=\"true\" + aria-pressed=\"true\"",
+    "minHitTarget": "44px per list item"
+  }
+}

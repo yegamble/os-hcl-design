@@ -1,0 +1,17 @@
+{
+  "name": "AspectRatio",
+  "category": "layout",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    {
+      "name": "ratio",
+      "type": "number",
+      "required": false,
+      "default": 1,
+      "description": "width / height"
+    }
+  ],
+  "tokensUsed": [],
+  "a11y": { "role": "none", "keyboard": [], "focus": "none", "minHitTarget": "n/a" }
+}

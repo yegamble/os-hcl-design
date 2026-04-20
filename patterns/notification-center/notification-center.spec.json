@@ -1,0 +1,34 @@
+{
+  "name": "NotificationCenter",
+  "category": "pattern",
+  "status": "stable",
+  "version": "0.1.0",
+  "componentsUsed": ["Popover", "Badge", "Button", "Separator"],
+  "props": [
+    {
+      "name": "items",
+      "type": "NotificationItem[]",
+      "required": true,
+      "description": "{ id, title, body?, meta?, unread?, icon? }"
+    },
+    { "name": "onMarkAllRead", "type": "() => void", "required": false },
+    { "name": "onSelect", "type": "(id: string) => void", "required": false },
+    { "name": "trigger", "type": "ReactNode", "required": true }
+  ],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.tertiary",
+    "color.action.primary",
+    "color.action.destructive",
+    "color.action.destructive-fg",
+    "radius.pill"
+  ],
+  "a11y": {
+    "role": "dialog (non-modal via Popover) + list",
+    "keyboard": ["Tab", "Enter", "Esc"],
+    "focus": "focus-visible on trigger + items",
+    "minHitTarget": "44px"
+  }
+}

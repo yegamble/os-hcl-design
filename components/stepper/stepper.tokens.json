@@ -1,0 +1,18 @@
+{
+  "stepper": {
+    "complete": {
+      "bg": { "$value": "{color.action.primary}", "$type": "color" },
+      "fg": { "$value": "{color.action.primary-fg}", "$type": "color" }
+    },
+    "current": { "$value": "{color.action.primary}", "$type": "color" },
+    "upcoming": {
+      "border": { "$value": "{color.border.default}", "$type": "color" },
+      "fg": { "$value": "{color.text.tertiary}", "$type": "color" }
+    },
+    "connector": {
+      "active": { "$value": "{color.action.primary}", "$type": "color" },
+      "inactive": { "$value": "{color.border.subtle}", "$type": "color" }
+    },
+    "radius": { "$value": "{radius.pill}", "$type": "dimension" }
+  }
+}

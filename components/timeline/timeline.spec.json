@@ -1,0 +1,23 @@
+{
+  "name": "Timeline",
+  "category": "data-display",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    {
+      "name": "items",
+      "type": "{ id: string; title: string; meta?: string; icon?: ReactNode; content?: ReactNode }[]",
+      "required": true
+    }
+  ],
+  "tokensUsed": [
+    "color.action.primary",
+    "color.action.primary-fg",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.tertiary",
+    "color.border.subtle",
+    "radius.pill"
+  ],
+  "a11y": { "role": "list", "keyboard": [], "focus": "none", "minHitTarget": "n/a" }
+}

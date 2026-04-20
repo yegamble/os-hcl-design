@@ -1,0 +1,5 @@
+{
+  "aspectRatio": {
+    "note": "No component tokens; pure layout primitive driven by the ratio prop."
+  }
+}

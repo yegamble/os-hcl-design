@@ -1,0 +1,21 @@
+{
+  "name": "HoverCard",
+  "category": "overlay",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-hover-card",
+  "subcomponents": ["HoverCardTrigger", "HoverCardContent"],
+  "tokensUsed": [
+    "color.surface.raised",
+    "color.border.subtle",
+    "color.text.primary",
+    "radius.card",
+    "shadow.popover"
+  ],
+  "a11y": {
+    "role": "dialog (non-modal, hover-triggered)",
+    "keyboard": ["Tab", "Esc"],
+    "focus": "shows on focus",
+    "minHitTarget": "inherited"
+  }
+}

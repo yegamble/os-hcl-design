@@ -1,0 +1,28 @@
+{
+  "name": "Slider",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-slider",
+  "props": [
+    { "name": "value", "type": "number[]", "required": false },
+    { "name": "onValueChange", "type": "(v: number[]) => void", "required": false },
+    { "name": "defaultValue", "type": "number[]", "required": false },
+    { "name": "min", "type": "number", "required": false, "default": 0 },
+    { "name": "max", "type": "number", "required": false, "default": 100 },
+    { "name": "step", "type": "number", "required": false, "default": 1 },
+    { "name": "disabled", "type": "boolean", "required": false }
+  ],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.surface.raised",
+    "color.action.primary",
+    "radius.pill"
+  ],
+  "a11y": {
+    "role": "slider",
+    "keyboard": ["Arrow", "Home", "End", "PageUp", "PageDown"],
+    "focus": "focus-visible ring on thumb",
+    "minHitTarget": "44px (track area)"
+  }
+}

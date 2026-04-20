@@ -1,0 +1,14 @@
+{
+  "name": "ScrollArea",
+  "category": "layout",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-scroll-area",
+  "tokensUsed": ["color.border.strong", "color.surface.elevated", "radius.pill"],
+  "a11y": {
+    "role": "region",
+    "keyboard": ["Arrow", "PageUp", "PageDown", "Home", "End"],
+    "focus": "viewport focusable",
+    "minHitTarget": "n/a"
+  }
+}

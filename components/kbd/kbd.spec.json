@@ -1,0 +1,8 @@
+{
+  "name": "Kbd",
+  "category": "typography",
+  "status": "stable",
+  "version": "0.1.0",
+  "tokensUsed": ["color.surface.elevated", "color.text.secondary", "color.border.subtle"],
+  "a11y": { "role": "none", "keyboard": [], "focus": "none", "minHitTarget": "n/a" }
+}

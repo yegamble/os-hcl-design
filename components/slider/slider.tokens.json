@@ -1,0 +1,11 @@
+{
+  "slider": {
+    "track": { "$value": "{color.surface.elevated}", "$type": "color" },
+    "range": { "$value": "{color.action.primary}", "$type": "color" },
+    "thumb": {
+      "bg": { "$value": "{color.surface.raised}", "$type": "color" },
+      "border": { "$value": "{color.action.primary}", "$type": "color" }
+    },
+    "radius": { "$value": "{radius.pill}", "$type": "dimension" }
+  }
+}

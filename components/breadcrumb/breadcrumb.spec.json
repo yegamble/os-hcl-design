@@ -1,0 +1,29 @@
+{
+  "name": "Breadcrumb",
+  "category": "navigation",
+  "status": "stable",
+  "version": "0.1.0",
+  "subcomponents": ["BreadcrumbList", "BreadcrumbItem", "BreadcrumbLink", "BreadcrumbSeparator"],
+  "props": [
+    {
+      "name": "href (BreadcrumbLink)",
+      "type": "string",
+      "required": true,
+      "description": "Ignored when current=true."
+    },
+    { "name": "current (BreadcrumbLink)", "type": "boolean", "required": false }
+  ],
+  "tokensUsed": [
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.tertiary",
+    "color.action.primary",
+    "radius.button"
+  ],
+  "a11y": {
+    "role": "navigation",
+    "keyboard": ["Tab"],
+    "focus": "focus-visible ring on link",
+    "minHitTarget": "44px"
+  }
+}

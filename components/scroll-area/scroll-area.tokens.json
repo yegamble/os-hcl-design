@@ -1,0 +1,7 @@
+{
+  "scrollArea": {
+    "thumb": { "$value": "{color.border.strong}", "$type": "color" },
+    "corner": { "$value": "{color.surface.elevated}", "$type": "color" },
+    "radius": { "$value": "{radius.pill}", "$type": "dimension" }
+  }
+}

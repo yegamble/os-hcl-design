@@ -1,0 +1,32 @@
+{
+  "name": "DropdownMenu",
+  "category": "overlay",
+  "status": "stable",
+  "version": "0.1.0",
+  "primitive": "@radix-ui/react-dropdown-menu",
+  "subcomponents": [
+    "DropdownMenuTrigger",
+    "DropdownMenuContent",
+    "DropdownMenuItem",
+    "DropdownMenuLabel",
+    "DropdownMenuSeparator",
+    "DropdownMenuGroup"
+  ],
+  "tokensUsed": [
+    "color.surface.raised",
+    "color.surface.elevated",
+    "color.border.subtle",
+    "color.text.primary",
+    "color.text.tertiary",
+    "color.separator.default",
+    "radius.card",
+    "radius.button",
+    "shadow.popover"
+  ],
+  "a11y": {
+    "role": "menu / menuitem",
+    "keyboard": ["Arrow", "Enter", "Esc", "Type-ahead"],
+    "focus": "focus-visible ring on trigger",
+    "minHitTarget": "44px per item"
+  }
+}

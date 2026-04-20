@@ -1,0 +1,16 @@
+{
+  "dropdownMenu": {
+    "content": {
+      "bg": { "$value": "{color.surface.raised}", "$type": "color" },
+      "border": { "$value": "{color.border.subtle}", "$type": "color" },
+      "shadow": { "$value": "{shadow.popover}", "$type": "shadow" },
+      "radius": { "$value": "{radius.card}", "$type": "dimension" }
+    },
+    "item": {
+      "fg": { "$value": "{color.text.primary}", "$type": "color" },
+      "bgHover": { "$value": "{color.surface.elevated}", "$type": "color" }
+    },
+    "label": { "$value": "{color.text.tertiary}", "$type": "color" },
+    "separator": { "$value": "{color.separator.default}", "$type": "color" }
+  }
+}

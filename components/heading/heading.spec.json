@@ -1,0 +1,33 @@
+{
+  "name": "Heading",
+  "category": "typography",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    {
+      "name": "level",
+      "type": "1 | 2 | 3 | 4 | 5 | 6",
+      "required": true,
+      "description": "Semantic heading level."
+    },
+    {
+      "name": "size",
+      "type": "'hero-lg' | 'hero-md' | 'hero-sm' | 'large-title' | 'title1' | 'title2' | 'title3' | 'headline'",
+      "required": false,
+      "default": "title2"
+    }
+  ],
+  "tokensUsed": [
+    "color.text.primary",
+    "type.size.hero-lg",
+    "type.size.hero-md",
+    "type.size.hero-sm",
+    "type.size.large-title",
+    "type.size.title1",
+    "type.size.title2",
+    "type.size.title3",
+    "type.size.headline",
+    "type.weight.heading"
+  ],
+  "a11y": { "role": "heading", "keyboard": [], "focus": "none", "minHitTarget": "n/a" }
+}

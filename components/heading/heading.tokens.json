@@ -1,0 +1,6 @@
+{
+  "heading": {
+    "fg": { "$value": "{color.text.primary}", "$type": "color" },
+    "weight": { "$value": "{type.weight.heading}", "$type": "fontWeight" }
+  }
+}

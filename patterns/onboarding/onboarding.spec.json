@@ -1,0 +1,31 @@
+{
+  "name": "Onboarding",
+  "category": "pattern",
+  "status": "stable",
+  "version": "0.1.0",
+  "componentsUsed": ["Button", "Stepper"],
+  "props": [
+    {
+      "name": "steps",
+      "type": "OnboardingStep[]",
+      "required": true,
+      "description": "{ id, label, description?, content }"
+    },
+    { "name": "onComplete", "type": "() => void", "required": false },
+    { "name": "onDismiss", "type": "() => void", "required": false }
+  ],
+  "tokensUsed": [
+    "color.surface.raised",
+    "color.text.primary",
+    "color.text.secondary",
+    "color.border.subtle",
+    "radius.sheet",
+    "shadow.card"
+  ],
+  "a11y": {
+    "role": "region",
+    "landmarks": ["section aria-label=\"Onboarding\""],
+    "progressIndicator": "Stepper aria-current=\"step\"",
+    "minHitTarget": "44px"
+  }
+}

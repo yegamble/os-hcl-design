@@ -1,0 +1,33 @@
+{
+  "name": "SearchWithFilters",
+  "category": "pattern",
+  "status": "stable",
+  "version": "0.1.0",
+  "componentsUsed": ["Input", "Chip"],
+  "props": [
+    { "name": "query", "type": "string", "required": true },
+    { "name": "onQueryChange", "type": "(q: string) => void", "required": true },
+    {
+      "name": "filters",
+      "type": "FilterOption[]",
+      "required": true,
+      "description": "{ id, label }[]"
+    },
+    { "name": "selected", "type": "string[]", "required": true },
+    { "name": "onToggleFilter", "type": "(id: string) => void", "required": true },
+    { "name": "onClear", "type": "() => void", "required": false },
+    { "name": "placeholder", "type": "string", "required": false },
+    { "name": "resultCount", "type": "number", "required": false },
+    { "name": "children", "type": "ReactNode", "required": true }
+  ],
+  "tokensUsed": ["color.text.link", "color.text.tertiary", "color.action.primary"],
+  "a11y": {
+    "landmarks": [
+      "section aria-label",
+      "form role=\"search\"",
+      "div role=\"group\" aria-label=\"Filters\"",
+      "div role=\"region\" aria-live=\"polite\""
+    ],
+    "minHitTarget": "44px via Input + Chip"
+  }
+}

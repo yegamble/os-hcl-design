@@ -1,0 +1,13 @@
+{
+  "fileUpload": {
+    "bg": {
+      "default": { "$value": "{color.surface.default}", "$type": "color" },
+      "dragging": { "$value": "{color.surface.elevated}", "$type": "color" }
+    },
+    "border": {
+      "default": { "$value": "{color.border.default}", "$type": "color" },
+      "dragging": { "$value": "{color.action.primary}", "$type": "color" }
+    },
+    "radius": { "$value": "{radius.card}", "$type": "dimension" }
+  }
+}

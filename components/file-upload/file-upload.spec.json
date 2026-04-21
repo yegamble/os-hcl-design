@@ -1,0 +1,36 @@
+{
+  "name": "FileUpload",
+  "category": "primitive",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    { "name": "accept", "type": "string", "required": false },
+    { "name": "multiple", "type": "boolean", "required": false, "default": false },
+    { "name": "maxSize", "type": "number", "required": false, "description": "Bytes" },
+    { "name": "onFiles", "type": "(files: File[]) => void", "required": false },
+    {
+      "name": "label",
+      "type": "string",
+      "required": false,
+      "default": "Drag files here, or click to browse"
+    },
+    { "name": "hint", "type": "string", "required": false },
+    { "name": "disabled", "type": "boolean", "required": false }
+  ],
+  "tokensUsed": [
+    "color.surface.default",
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.tertiary",
+    "color.text.destructive",
+    "color.border.default",
+    "color.action.primary",
+    "radius.card"
+  ],
+  "a11y": {
+    "role": "region",
+    "keyboard": ["Tab", "Enter", "Space"],
+    "focus": "focus-visible ring on dropzone",
+    "minHitTarget": "dropzone 128px min-height"
+  }
+}

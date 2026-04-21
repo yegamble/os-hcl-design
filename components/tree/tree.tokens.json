@@ -1,0 +1,10 @@
+{
+  "tree": {
+    "item": {
+      "fg": { "$value": "{color.text.primary}", "$type": "color" },
+      "bgHover": { "$value": "{color.surface.elevated}", "$type": "color" },
+      "chevron": { "$value": "{color.text.tertiary}", "$type": "color" }
+    },
+    "radius": { "$value": "{radius.button}", "$type": "dimension" }
+  }
+}

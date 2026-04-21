@@ -1,0 +1,30 @@
+{
+  "name": "Tree",
+  "category": "data-display",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    {
+      "name": "nodes",
+      "type": "TreeNode[]",
+      "required": true,
+      "description": "{ id, label, children? }[]"
+    },
+    { "name": "selectedId", "type": "string", "required": false },
+    { "name": "onSelect", "type": "(id: string) => void", "required": false },
+    { "name": "aria-label", "type": "string", "required": false, "default": "Tree" }
+  ],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.text.tertiary",
+    "color.action.primary",
+    "radius.button"
+  ],
+  "a11y": {
+    "role": "tree / treeitem / group",
+    "keyboard": ["Tab"],
+    "focus": "focus-visible ring on select + expand buttons",
+    "minHitTarget": "44px per row"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "text": {
+    "fg": {
+      "primary": { "$value": "{color.text.primary}", "$type": "color" },
+      "secondary": { "$value": "{color.text.secondary}", "$type": "color" },
+      "tertiary": { "$value": "{color.text.tertiary}", "$type": "color" },
+      "destructive": { "$value": "{color.text.destructive}", "$type": "color" },
+      "link": { "$value": "{color.text.link}", "$type": "color" }
+    }
+  }
+}

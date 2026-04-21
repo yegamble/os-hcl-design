@@ -1,0 +1,46 @@
+{
+  "name": "Text",
+  "category": "typography",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    {
+      "name": "size",
+      "type": "'body' | 'callout' | 'subheadline' | 'footnote' | 'caption1' | 'caption2'",
+      "required": false,
+      "default": "body"
+    },
+    {
+      "name": "tone",
+      "type": "'primary' | 'secondary' | 'tertiary' | 'destructive' | 'link'",
+      "required": false,
+      "default": "primary"
+    },
+    {
+      "name": "weight",
+      "type": "'regular' | 'medium' | 'semibold'",
+      "required": false,
+      "default": "regular"
+    },
+    {
+      "name": "as",
+      "type": "'p' | 'span' | 'div' | 'strong' | 'em'",
+      "required": false,
+      "default": "p"
+    }
+  ],
+  "tokensUsed": [
+    "color.text.primary",
+    "color.text.secondary",
+    "color.text.tertiary",
+    "color.text.destructive",
+    "color.text.link",
+    "type.size.body",
+    "type.size.callout",
+    "type.size.subheadline",
+    "type.size.footnote",
+    "type.size.caption1",
+    "type.size.caption2"
+  ],
+  "a11y": { "role": "none", "keyboard": [], "focus": "none", "minHitTarget": "n/a" }
+}

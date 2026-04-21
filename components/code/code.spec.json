@@ -1,0 +1,22 @@
+{
+  "name": "Code",
+  "category": "typography",
+  "status": "stable",
+  "version": "0.1.0",
+  "props": [
+    { "name": "block", "type": "boolean", "required": false, "default": false },
+    {
+      "name": "language",
+      "type": "string",
+      "required": false,
+      "description": "Adds language-<x> class for downstream highlighters"
+    }
+  ],
+  "tokensUsed": [
+    "color.surface.elevated",
+    "color.text.primary",
+    "color.border.subtle",
+    "radius.card"
+  ],
+  "a11y": { "role": "none", "keyboard": [], "focus": "none", "minHitTarget": "n/a" }
+}
